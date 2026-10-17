@@ -1,0 +1,66 @@
+:root{
+--font-heading: "Lora", Georgia, serif;
+--font-body: "EB Garamond", serif;
+--font-body2: "DM Sans", Arial, sans-serif;
+    
+--font-weight-regular: 400;
+--font-weight-medium: 500;
+--font-weight-semibold: 600;
+--font-weight-bold: 700;
+
+--color-primary: #012C19;
+--color-primary-hover: #01452A;
+--color-accent: #8C9643;
+
+--color-background: #F7F8F2;
+--color-surface: #FFFFFF;
+--color-surface-muted: #EEF1E7;
+--color-background-dark: #012C19;
+
+--text-xs: 12px;
+--text-sm: 14px;
+--text-base: 16px;
+--text-lg: 18px;
+--text-xl: 20px;
+
+--text-h4: 20px;
+--text-h3: 22px;
+--text-h2: 28px;
+--text-hero: 30px;
+
+--text-body: 16px;
+--text-intro: 18px;
+
+--line-height-heading: 1.15;
+--line-height-body: 1.6;
+/*clamp(minimum, flexible value, maximum)
+ */
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+p{
+    margin: 0;
+    font-family: var(--font-family3);
+    color:  white;
+}
+div,section{
+    margin: 0;
+}
+body{
+    background-color: white;
+}
+h1{
+    color: var(--color-primary);
+    font-size: var(--text-hero);
+    font-family: var(--font-heading);
+}
+
+    
+ 

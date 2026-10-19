@@ -1,8 +1,9 @@
 :root{
 --font-heading: "Lora", Georgia, serif;
+--font-heading2:"Bakbak One", serif;
 --font-body: "EB Garamond", serif;
 --font-body2: "DM Sans", Arial, sans-serif;
-    
+
 --font-weight-regular: 400;
 --font-weight-medium: 500;
 --font-weight-semibold: 600;
@@ -54,13 +55,105 @@ div,section{
     margin: 0;
 }
 body{
-    background-color: white;
+    margin: 0;
 }
-h1{
-    color: var(--color-primary);
-    font-size: var(--text-hero);
+header h1{
+    color: var(--color-background);
+    font-size: clamp(15px,5vw,50px);
+    font-family: var(--font-heading2);
+}
+
+.image-container{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 123.917px;
+}
+.image-container img{
+    width: 100%;
+}
+.header-container{
+    display: flex;
+    padding: 25px;
+    height: 70px;
+    justify-content: center;
+    background-color: var(--color-background-dark);
+    position: relative;
+}
+.navigation-links ul{
+    list-style-type: none;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.navigation-links ul li a{
+    text-decoration: none;
+    color: white;
     font-family: var(--font-heading);
+    padding-right: 80px;
+    font-weight: bold;
+    font-size: 18px;
 }
+.login-register-container{
+    position: absolute;
+    right:123.917px;
+}
+.hero{
+    display: flex;
+    height: 80vh;
+    background-color: var(--color-background-dark);
+    padding: 20px;
+    justify-content: center;
+    gap: 80px;
+}
+.hero-left{
+    flex-basis: 40%;   
+}
+.hero-left,.hero-right{
+    margin-top: 150px;
+}
+.hero-left h1{
+    color: white;
+    font-family:var(--font-heading2);
+    line-height: 1.3;
+    letter-spacing: 1px;
+    font-size: 45px;
+    
+    
+}
+.hero-left p{
+    font-family: var(--font-body);
+    font-size: 30px;
+    margin: 50px 0px;
+    
+}
+
+.hero-right{
+    flex-basis: 45%;
+    margin-top: 50px;
+    
+}
+.hero-right img{
+    width: 100%;
+    border-radius: 40px;
+}
+.hero-left .hero-btn{
+    text-decoration: none;
+    width: clamp(80px,7vw,200px);
+    background-color: green;
+    color: white;
+    padding: 18px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: border-radius 0.3s ease;
+    border-radius: 0px;
+}
+.hero-left .hero-btn:hover{
+    border-radius: 56px 0px 67px 0px;
+}
+
+
+
 
     
  

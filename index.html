@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  </head>
 <body>
    <main>
      <section class="header-hero-wrapper">
@@ -59,23 +60,25 @@
               
      </section>
 
-     <section class="services-wrapper" aria-labelledby="services-title">
-      <h2 id="services-title">À chaque projet, une manière d’avancer.</h2>
+     <section class="services-wrapper page-container" aria-labelledby="services-title">
+      <h2 id="services-title">À chaque projet, une manière d’avancer</h2>
       <p>Découvrez les solutions financières de Tropical Entreprise
         adaptées à vos besoins et à vos projets.</p>
     
       <div class="services-container">
-          <header>
+         <article class="service-card">
+          <header class="service-card-header">
             <h3>Épargne</h3>
             <p>
               Les grands projets commencent par de petits gestes.
-              Préparez demain en donnant une place
-              à vos économies dès aujourd’hui.
             </p>
           </header>
-          <a href="/contact?service=epargne">
-            Nous contacter
-          </a>
+          <div class="btn-container">
+            <a href="/contact?service=epargne" class="service-contact-link hero-btn button">
+              Parlons de votre épargne
+            </a>
+          </div>
+          
           <div class="features-container">
             <h4>Caractéristiques</h4>
             <ul>
@@ -101,14 +104,141 @@
               </li>
             </ul>
           </div>
-          <footer>
-            <a href="/services/epargne">
-              En savoir plus
-              <i class="fa-solid fa-arrow-right"
-                 aria-hidden="true"></i>
+          <footer class="btn-container">
+            <a href="/services/epargne"  class="service-card-main-link">
+              Découvrir l’Épargne
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right preview-icon"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></i>
             </a>
           </footer>
         </article>
+        <article class="service-card">
+          <header class="service-card-header">
+            <h3>Trezò Pam</h3>
+            <p>
+              Ce qui compte pour vous mérite
+              une attention particulière.
+            </p>
+          </header>
+        
+          <div class="btn-container">
+            <a href="/contact?service=trezo-pam"
+               class="service-contact-link hero-btn button">
+              Parlons de Trezò Pam
+            </a>
+          </div>
+        
+          <div class="features-container">
+            <h4>Caractéristiques</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-circle-check"
+                   aria-hidden="true"></i>
+                Ouverture d’un compte Trezò Pam
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"
+                   aria-hidden="true"></i>
+                Enregistrement des versements
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"
+                   aria-hidden="true"></i>
+                Suivi des mouvements du compte
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"
+                   aria-hidden="true"></i>
+                Historique des opérations
+              </li>
+            </ul>
+          </div>
+        
+          <footer class="btn-container">
+            <a href="/services/trezo-pam"
+               class="service-card-main-link">
+              Découvrir Trezò Pam
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   width="24" height="24"
+                   viewBox="0 0 24 24"
+                   fill="none"
+                   stroke="currentColor"
+                   stroke-width="2"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   aria-hidden="true">
+                <path d="M7 7h10v10"/>
+                <path d="M7 17 17 7"/>
+              </svg>
+            </a>
+          </footer>
+        </article>
+
+        <article class="service-card">
+          <header class="service-card-header">
+            <h3>Crédit</h3>
+            <p>
+              Donnez à vos ambitions les moyens
+              de passer à l’action.
+            </p>
+          </header>
+        
+          <div class="btn-container">
+            <a href="/contact?service=credit"
+               class="service-contact-link hero-btn button">
+              Parlons de votre projet
+            </a>
+          </div>
+        
+          <div class="features-container">
+            <h4>Caractéristiques</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-circle-check"
+                   aria-hidden="true"></i>
+                Soumission d’une demande de crédit
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"
+                   aria-hidden="true"></i>
+                Constitution du dossier
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"
+                   aria-hidden="true"></i>
+                Étude et évaluation de la demande
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"
+                   aria-hidden="true"></i>
+                Suivi des remboursements après accord
+              </li>
+            </ul>
+          </div>
+        
+          <footer class="btn-container">
+            <a href="/services/credit"
+               class="service-card-main-link">
+              Découvrir le Crédit
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   width="24" height="24"
+                   viewBox="0 0 24 24"
+                   fill="none"
+                   stroke="currentColor"
+                   stroke-width="2"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   aria-hidden="true">
+                <path d="M7 7h10v10"/>
+                <path d="M7 17 17 7"/>
+              </svg>
+            </a>
+          </footer>
+        </article>
+
+        
+        
+
+    
     
       </div>
     </section>
